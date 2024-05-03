@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amor da Sua Vida</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+ #pergunta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:100%;
+  text-align: center;
+}
+    body {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        font-size: large;
+        background-image: url('theoffice.gif'); 
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fdf0d5;
+        text-shadow: 2px 2px 4px #780000;
+      }
+      #pergunta {
+        margin-top: 50px;
+      }
+      .botao {
+        margin: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 24px;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        position: absolute;
+        display: inline-block;
+    
+      }
+      .sim {
+        top: 100%;
+  left: 40%;
+
+        background-color:#780000;
+        color: #fff;
+      }
+      .sim:hover {
+        background-color:#780000;
+      }
+      .nao {
+        position: absolute;
+        background-color: #780000;
+        color: #fff;
+      }
+      .nao:hover {
+        background-color:#780000;
+        color: #fff;
+      }
+
+    </style>
+    <div id="pergunta">
+        <p><h1>Quer saber quem é o amor da sua vida?</h1></p>
+        <button class="botao sim">Sim</button>
+        <button class="botao nao">Não</button>
+      </div>
+      
+      <script>
+        document.querySelector('.sim').addEventListener('click', function() {
+          window.location.href = 'https://www.instagram.com/thafnis_ramoss?igsh=MXVwd282ZW54c2xqZA%3D%3D&utm_source=qr'; 
+        });
+      
+        document.querySelector('.nao').addEventListener('mouseover', function(event) {
+          this.style.top = Math.random() * window.innerHeight + 'px';
+          this.style.left = Math.random() * window.innerWidth + 'px';
+        });
+      </script>    
